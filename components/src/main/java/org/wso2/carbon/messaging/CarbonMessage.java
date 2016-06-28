@@ -60,6 +60,7 @@ public abstract class CarbonMessage {
     protected boolean alreadyRead;
 
     private boolean endOfMsgAdded = false;
+    private boolean debugEnabled = false;
 
     private Writer writer;
     private boolean isMessageBodyAdded;
@@ -354,4 +355,11 @@ public abstract class CarbonMessage {
         }
     }
 
+    public boolean isDebugEnabled() {
+        return debugEnabled;
+    }
+
+    public void setDebugEnabled(boolean debugEnabled) {
+        this.debugEnabled = debugEnabled;
+    }
 }
